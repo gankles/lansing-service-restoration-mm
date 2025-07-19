@@ -34,3 +34,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Prevent nested project directories
+**/node_modules/
+**/.next/
+**/build/
+**/dist/
+**/.git/
+
+# Prevent duplicate project folders
+lansing-service-restoration-mm/
+mm-*-restoration*/
+clone-*/
+*-clone/

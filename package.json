@@ -10,7 +10,9 @@
     "docker:dev": "docker-compose up --build",
     "docker:prod": "docker-compose -f docker-compose.prod.yml up --build",
     "docker:test": "docker-compose exec app /app/scripts/test.sh",
-    "docker:logs": "docker-compose logs -f"
+    "docker:logs": "docker-compose logs -f",
+    "check:structure": "./scripts/check-structure.sh",
+    "setup": "./scripts/check-structure.sh && npm install"
   },
   "dependencies": {
     "react": "^18",
